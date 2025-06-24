@@ -11,3 +11,19 @@
   --background-main: url(/images/cover-image-dark.png);
   --display-flex: flex;
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+  --color-title: var(--color-magenta);
+  --color-text: var(--color-pink-light);
+  --color-decorated: var(--color-red);
+  --color-bg-sub-title: var(--color-red);
+  --color-sub-title: var(--color-black);
+  --color-hover: var(--color-red-alpha);
+  --text-shadow-title: 4px 4px 0 var(--color-bg-sub-title);
+  --text-shadow-footer: 2px 2px 0px var(--color-red);
+  --text-shadow-link: 2px 2px 0 var(--color-bg-sub-title);
+  --background-main: url(/images/cover-image-dark.png);
+  --display-flex: flex;
+  }
+}

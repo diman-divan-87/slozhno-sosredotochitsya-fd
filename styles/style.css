@@ -79,10 +79,6 @@
   align-self: center;
 }
 
-.rec {
-  position: absolute;
-}
-
 .header__theme-menu {
   display: flex;
   justify-content: center;

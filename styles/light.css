@@ -1,16 +1,30 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 :root.theme-light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --color-title: var(--color-pink-ultralight);
+  --color-text: var(--color-gray);
+  --color-bg-sub-title: var(--color-pink);
+  --color-decorated: var(--color-gray);
+  --color-sub-title: var(--color-gray);
+  --color-hover: var(--color-black-alpha);
+  --text-shadow-title: 4px 4px 0 var(--color-bg-sub-title);
+  --text-shadow-footer: 2px 2px 0px var(--color-red);
+  --text-shadow-link: 2px 2px 0 var(--color-bg-sub-title);
+  --background-main: url(/images/cover-image-light.png);
+  --display-flex: none;
 }
 
-.theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
+@media (prefers-color-scheme: light) {
+  :root {
+  --color-title: var(--color-pink-ultralight);
+  --color-text: var(--color-gray);
+  --color-bg-sub-title: var(--color-pink);
+  --color-decorated: var(--color-gray);
+  --color-sub-title: var(--color-gray);
+  --color-hover: var(--color-black-alpha);
+  --text-shadow-title: 4px 4px 0 var(--color-bg-sub-title);
+  --text-shadow-footer: 2px 2px 0px var(--color-red);
+  --text-shadow-link: 2px 2px 0 var(--color-bg-sub-title);
+  --background-main: url(/images/cover-image-light.png);
+  --display-flex: none;
+  }
+
 }

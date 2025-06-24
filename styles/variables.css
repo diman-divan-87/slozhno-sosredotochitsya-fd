@@ -2,3 +2,14 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root {
+  --color-pink-ultralight: #ffc2e6;
+  --color-pink-light: #F1B2CE;
+  --color-pink: #ff8dcb;
+  --color-red: #ff0070;
+  --color-magenta: #db00ff;
+  --color-gray: #353430;
+  --color-black: #000028;
+  --color-black-alpha: rgba(50, 49, 45, 0.4);
+  --color-red-alpha: rgba(255, 0, 112, 0.4);
+}

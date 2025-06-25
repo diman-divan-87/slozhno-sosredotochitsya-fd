@@ -8,7 +8,7 @@
   --text-shadow-title: 4px 4px 0 var(--color-bg-sub-title);
   --text-shadow-footer: 2px 2px 0px var(--color-red);
   --text-shadow-link: 2px 2px 0 var(--color-bg-sub-title);
-  --background-main: url(/images/cover-image-dark.png);
+  --background-main: var(--image-bg-dark, --color-black);
   --display-flex: flex;
 }
 
@@ -23,7 +23,7 @@
   --text-shadow-title: 4px 4px 0 var(--color-bg-sub-title);
   --text-shadow-footer: 2px 2px 0px var(--color-red);
   --text-shadow-link: 2px 2px 0 var(--color-bg-sub-title);
-  --background-main: url(/images/cover-image-dark.png);
+  --background-main: var(--image-bg-dark, --color-black);
   --display-flex: flex;
   }
 }

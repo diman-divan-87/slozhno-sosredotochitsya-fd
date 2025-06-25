@@ -45,7 +45,3 @@ button {
   background: none;
   border: none;
 }
-
-.header__theme-menu-button_active {
-  pointer-events: none;
-}

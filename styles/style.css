@@ -2,7 +2,7 @@
 
 .page {
   font-family: "IBM Plex mono", sans-serif;
-  background: var(--background-main);
+  background: var(--background-main, --background-main-color);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -43,12 +43,13 @@
 
 .header {
   padding: 20px;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: 1fr max-content 1fr;
 }
 
 .title {
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   margin-inline-start: -20px;
+  line-height: 128px;
   align-self: center;
   color: var(--color-title);
   text-shadow: var(--text-shadow-title);
@@ -63,7 +64,7 @@
 .sub-title {
   font-weight: 700;
   font-size: 18px;
-  line-height: 23px;
+  line-height: 23.3px;
   background: var(--color-bg-sub-title);
   color: var(--color-sub-title);
 }
@@ -74,7 +75,6 @@
 
 .sub-title-main {
   width: 50%;
-  margin-block-start: -58px;
   justify-self: end;
   align-self: center;
 }
@@ -180,8 +180,8 @@
   grid-template-rows: repeat(1, 1fr);
 }
 
-.h2-concentrate,
-.h2-goldfish {
+.title-concentrate,
+.title-goldfish {
   grid-row-start: span 2;
 }
 
@@ -278,8 +278,7 @@
   }
 
   .title {
-    height: 107px;
-    line-height: 107px;
+    line-height: 100px;
   }
 
   .header {
@@ -298,12 +297,12 @@
     gap: 10px;
   }
 
-  .sub-title-main {
-    margin-block-start: -5px;
+  .sub-title {
+    line-height: 23px;
   }
-
-  .h2-concentrate,
-  .h2-goldfish {
+  
+  .title-concentrate,
+  .title-goldfish {
     min-width: 236px;
   }
 
@@ -338,8 +337,7 @@
 
   .title {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    line-height: 100px;
-    height: 197px;
+    line-height: 95px;
     margin-inline-start: 0px;
   }
 
